@@ -25,10 +25,16 @@ struct LoginView: View {
                         .font(.largeTitle)
                         .bold()
                         .foregroundStyle(.blue)
+                    
                     VStack(spacing: 20) {
                         
-                        TextField("Email", text: $email)
-                        SecureField("Password", text: $password)
+                        CustomTextField(imageName: "envelope",
+                                        placeholderText: "Email",
+                                        isSecureField: false,
+                                        text: $email)
+                        
+                        CustomTextField(imageName: "lock", placeholderText: "Password", isSecureField: true, text: $password)
+                        
                     }
                     .padding([.top, .horizontal, .bottom], 32)
                 }
