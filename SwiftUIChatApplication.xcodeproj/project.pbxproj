@@ -11,6 +11,8 @@
 		51BA91AE2B5BEAE60085B69C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BA91AD2B5BEAE60085B69C /* ContentView.swift */; };
 		51BA91B02B5BEAE70085B69C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51BA91AF2B5BEAE70085B69C /* Assets.xcassets */; };
 		51BA91B32B5BEAE70085B69C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51BA91B22B5BEAE70085B69C /* Preview Assets.xcassets */; };
+		51BA91C02B5BEC0C0085B69C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BA91BF2B5BEC0C0085B69C /* LoginView.swift */; };
+		51BA91C32B5BEC2C0085B69C /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BA91C22B5BEC2C0085B69C /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		51BA91AD2B5BEAE60085B69C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		51BA91AF2B5BEAE70085B69C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51BA91B22B5BEAE70085B69C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		51BA91BF2B5BEC0C0085B69C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		51BA91C22B5BEC2C0085B69C /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,11 @@
 		51BA91AA2B5BEAE60085B69C /* SwiftUIChatApplication */ = {
 			isa = PBXGroup;
 			children = (
+				51BA91BD2B5BEB9B0085B69C /* Model */,
+				51BA91BC2B5BEB990085B69C /* View */,
+				51BA91BB2B5BEB970085B69C /* ViewModel */,
+				51BA91BA2B5BEB940085B69C /* API */,
+				51BA91B92B5BEB900085B69C /* Utils */,
 				51BA91AB2B5BEAE60085B69C /* SwiftUIChatApplicationApp.swift */,
 				51BA91AD2B5BEAE60085B69C /* ContentView.swift */,
 				51BA91AF2B5BEAE70085B69C /* Assets.xcassets */,
@@ -65,6 +74,51 @@
 				51BA91B22B5BEAE70085B69C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		51BA91B92B5BEB900085B69C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		51BA91BA2B5BEB940085B69C /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		51BA91BB2B5BEB970085B69C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		51BA91BC2B5BEB990085B69C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51BA91BE2B5BEBF20085B69C /* Authentication */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		51BA91BD2B5BEB9B0085B69C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		51BA91BE2B5BEBF20085B69C /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				51BA91BF2B5BEC0C0085B69C /* LoginView.swift */,
+				51BA91C22B5BEC2C0085B69C /* RegistrationView.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +191,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51BA91C02B5BEC0C0085B69C /* LoginView.swift in Sources */,
 				51BA91AE2B5BEAE60085B69C /* ContentView.swift in Sources */,
 				51BA91AC2B5BEAE60085B69C /* SwiftUIChatApplicationApp.swift in Sources */,
+				51BA91C32B5BEC2C0085B69C /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
