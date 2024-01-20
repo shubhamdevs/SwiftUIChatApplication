@@ -12,6 +12,7 @@ struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -26,7 +27,7 @@ struct LoginView: View {
                         .bold()
                         .foregroundStyle(.blue)
                     
-                    VStack(spacing: 20) {
+                    VStack(spacing: 30) {
                         
                         CustomTextField(imageName: "envelope",
                                         placeholderText: "Email",
@@ -68,7 +69,11 @@ struct LoginView: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: RegistrationView(), label: {
+                NavigationLink(
+                    destination: RegistrationView()
+                        .navigationBarBackButtonHidden(),
+                               
+                    label: {
                         HStack {
                             Text("Dont have an account?")
                                 .font(.system(size: 14))
