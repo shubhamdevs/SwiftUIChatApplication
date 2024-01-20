@@ -8,24 +8,33 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @State private var email = ""
+    @State private var password = ""
+    
     var body: some View {
-        ZStack {
-            NavigationStack {
+        NavigationView {
+            VStack(alignment: .leading) {
+                
                 VStack(alignment: .leading) {
                     HStack { Spacer()}
                     Text("Hello.")
                     Text("Welcome Back")
                         .foregroundStyle(.blue)
-                    Spacer()
                 }
                 .padding()
                 .font(.largeTitle)
                 .bold()
                 
-                VStack {
-
-                }
                 
+                VStack(spacing: 20) {
+                    
+                    TextField("Email", text: $email)
+                    SecureField("Password", text: $password)
+                }
+                .padding([.top, .horizontal], 32)
+                
+                Spacer()
             }
         }
     }
