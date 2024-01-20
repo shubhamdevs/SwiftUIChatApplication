@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5162A78C2B5C8219008D3FD3 /* SettingsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5162A78B2B5C8219008D3FD3 /* SettingsHeaderView.swift */; };
+		5162A78E2B5C8319008D3FD3 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5162A78D2B5C8319008D3FD3 /* SettingsCell.swift */; };
 		51BA91AC2B5BEAE60085B69C /* SwiftUIChatApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BA91AB2B5BEAE60085B69C /* SwiftUIChatApplicationApp.swift */; };
 		51BA91AE2B5BEAE60085B69C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BA91AD2B5BEAE60085B69C /* ContentView.swift */; };
 		51BA91B02B5BEAE70085B69C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51BA91AF2B5BEAE70085B69C /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5162A78B2B5C8219008D3FD3 /* SettingsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeaderView.swift; sourceTree = "<group>"; };
+		5162A78D2B5C8319008D3FD3 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		51BA91A82B5BEAE60085B69C /* SwiftUIChatApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIChatApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51BA91AB2B5BEAE60085B69C /* SwiftUIChatApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChatApplicationApp.swift; sourceTree = "<group>"; };
 		51BA91AD2B5BEAE60085B69C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				51ECA2D42B5C6ED50048DFCE /* SettingsView.swift */,
+				5162A78D2B5C8319008D3FD3 /* SettingsCell.swift */,
+				5162A78B2B5C8219008D3FD3 /* SettingsHeaderView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -251,7 +257,9 @@
 			files = (
 				51BA91C02B5BEC0C0085B69C /* LoginView.swift in Sources */,
 				51ECA2D52B5C6ED50048DFCE /* SettingsView.swift in Sources */,
+				5162A78E2B5C8319008D3FD3 /* SettingsCell.swift in Sources */,
 				51ECA2D32B5C6E9A0048DFCE /* ChannelsView.swift in Sources */,
+				5162A78C2B5C8219008D3FD3 /* SettingsHeaderView.swift in Sources */,
 				51ECA2DA2B5C6F2A0048DFCE /* ConversationsView.swift in Sources */,
 				51BA91AE2B5BEAE60085B69C /* ContentView.swift in Sources */,
 				51BA91AC2B5BEAE60085B69C /* SwiftUIChatApplicationApp.swift in Sources */,
