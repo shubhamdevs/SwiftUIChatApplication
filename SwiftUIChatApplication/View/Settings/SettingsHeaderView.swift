@@ -10,7 +10,7 @@ import SwiftUI
 struct SettingsHeaderView: View {
     var body: some View {
         HStack {
-            Image(systemName: "person")
+            Image("anindita")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 64, height: 64)
@@ -18,10 +18,10 @@ struct SettingsHeaderView: View {
                 .padding(.leading)
             
             VStack(alignment: .leading, spacing: 4) {
-                Text("Person's Name")
+                Text("Anindita Ghosh")
                     .font(.system(size: 18))
                 
-                Text("current status")
+                Text("status: Sleeping😴")
                     .foregroundStyle(.gray)
                     .font(.system(size: 14))
             }
@@ -32,4 +32,9 @@ struct SettingsHeaderView: View {
         .background(Color(.white))
         .padding(.top, 30)
     }
+}
+
+
+#Preview {
+    SettingsHeaderView()
 }
